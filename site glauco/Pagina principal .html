@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção de Perfil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      background-color: #1c1c1c;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 15px;
+      margin-right: 20px;
+    }
+
+    .header-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .header-button:hover {
+      background-color: #0056b3;
+    }
+
+    main {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .profile-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-card {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-name {
+      width: 100%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="casinha.png" alt="Home" class="home-icon" onclick="location.href='Pagina principal .html'">
+    </div>
+    <div class="navigation">
+      <button class="header-button" onclick="location.href='Hobbies e curiosidades.html'">Sobre mim</button>
+      <button class="header-button" onclick="location.href='Robotica.html'">Projetos de Robótica</button>
+      <button class="header-button" onclick="location.href='Programacao.html'">Programação</button>
+      <button class="header-button" onclick="location.href='Avaliação do Site.html'">Avalie o Site</button>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="title">Areas do Saber</h1>
+    <div class="profile-grid">
+      <div class="profile-card" style="background-image: url('Ciencia\ humanas.jpg');" onclick="location.href='CHS.html'">
+        <div class="profile-name">Ciências Humanas</div>
+      </div>
+      <div class="profile-card" style="background-image: url('Ciencia\ da\ natureza.jpg');" onclick="location.href='CNT.html'">
+        <div class="profile-name">Ciências da Natureza</div>
+      </div>
+      <div class="profile-card" style="background-image: url('Linguagens.jpg');" onclick="location.href='LGG.html'">
+        <div class="profile-name">Linguagens</div>
+      </div>
+      <div class="profile-card" style="background-image: url('Internet\ das\ coisas.jpg');" onclick="location.href='IOT.html'">
+        <div class="profile-name">Internet Das Coisas</div>
+      </div>
+      
+      </div>
+    </div>
+  </main>
+</body>
+</html>

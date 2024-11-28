@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanços na Programação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        .header-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header-button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            margin-top: 80px;
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            background: #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .progress {
+            margin-bottom: 40px;
+        }
+
+        .progress h3 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .progress p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .progress img, video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="casinha.png" alt="Home" class="home-icon" onclick="location.href='Pagina principal .html'">
+        </div>
+        <div class="navigation">
+            <button class="header-button" onclick="location.href='Hobbies e curiosidades.html'">Sobre mim</button>
+            <button class="header-button" onclick="location.href='Robotica.html'">Projetos de robótica</button>
+            <button class="header-button" onclick="location.href='programacao.html'">Programação</button>
+            <button class="header-button" onclick="location.href='Avaliação do Site.html'">Avalie o meu Site</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Avanços na Programação</h1>
+
+        <div class="progress">
+            <h3>1º Avanço: Aprendendo de fato</h3>
+            <p>Começamos a de fato aprender programação por meio da plataforma do portuguesol. Com ela, nós aprendemos a lógica por trás da programação.</p>
+            <img src="inicio programaçao.png" alt="Imagem do inicio da lógica">
+        </div>
+
+        <div class="progress">
+            <h3>2º Avanço: Aprendendo Java</h3>
+            <p>Começamos a aprender uma linguagem de programação chamada "Java".</p>
+            <img src="inicio java.png" alt="Imagem do inicio de Java">
+        </div>
+
+        <div class="progress">
+            <h3>3º Avanço: Aprendendo a programar o Arduino Digital</h3>
+            <p>Começamos a aprender a programar para a placa de projetos "Arduino", fizemos diversos projetos como outro segue linha.</p>
+            <img src="projeto no arduino digital.png" alt="Imagem dos projetos no Arduino digital">
+        </div>
+
+        <div class="progress">
+            <h3>4º Avanço: Aprendendo a programar o Arduino Físico</h3>
+            <p>Desenvolvemos nossos projetos do Arduino na prática, incluindo o segue linha.</p>
+        </div>
+
+        <div class="progress">
+            <h3>5º Avanço: Projetos feitos</h3>
+            <p>Projetos feitos em aula do Tecnico</p>
+            <img src="Bone glauco.jpg" alt="Imagem dos projetos no Arduino fisico">
+            <img src="segue linha.jpg" alt="Imagem dos projetos no Arduino fisico">
+            <video controls>
+                <source src="Segue linha video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+
+        <button onclick="location.href='Pagina principal .html'">Voltar para página principal</button>
+    </main>
+</body>
+</html>

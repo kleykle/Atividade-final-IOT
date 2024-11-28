@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Meu Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        .header-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header-button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            margin-top: 80px; /* Espaço para a barra fixa */
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            background: #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #222;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .header-button-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .header-button-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="casinha.png" alt="Home" class="home-icon" onclick="location.href='Pagina principal .html'">
+        </div>
+        <div class="navigation">
+            <button class="header-button" onclick="location.href='Hobbies e curiosidades.html'">Sobre mim</button>
+            <button class="header-button" onclick="location.href='Robotica.html'">Projetos de Robótica</button>
+            <button class="header-button" onclick="location.href='Programacao.html'">Programação</button>
+            <button class="header-button" onclick="location.href='Avaliação do Site.html'">Avalie o Site</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Pesquisa de Satisfação de Navegação</h1>
+
+        <form>
+            <!-- Informações pessoais -->
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+            </fieldset>
+
+            <!-- Avaliação de Navegação -->
+            <fieldset>
+                <legend>Avaliação de Navegação</legend>
+                <label>Avalie sua experiência de navegação (1 a 5 estrelas):</label>
+                <input type="radio" id="estrela1" name="navegacao" value="1">
+                <label for="estrela1">1 Estrela</label><br>
+                <input type="radio" id="estrela2" name="navegacao" value="2">
+                <label for="estrela2">2 Estrelas</label><br>
+                <input type="radio" id="estrela3" name="navegacao" value="3">
+                <label for="estrela3">3 Estrelas</label><br>
+                <input type="radio" id="estrela4" name="navegacao" value="4">
+                <label for="estrela4">4 Estrelas</label><br>
+                <input type="radio" id="estrela5" name="navegacao" value="5">
+                <label for="estrela5">5 Estrelas</label>
+            </fieldset>
+
+            <!-- Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label>O que você gostou no site? (selecione todas que se aplicam):</label>
+                <input type="checkbox" id="facilidade" name="feedback" value="Facilidade de Navegação">
+                <label for="facilidade">Facilidade de Navegação</label><br>
+
+                <input type="checkbox" id="design" name="feedback" value="Design do Site">
+                <label for="design">Design do Site</label><br>
+
+                <input type="checkbox" id="velocidade" name="feedback" value="Velocidade de Carregamento">
+                <label for="velocidade">Velocidade de Carregamento</label><br>
+
+                <label for="comentarios">Comentários Adicionais:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seus comentários aqui..."></textarea>
+            </fieldset>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+
+        <hr>
+
+        <!-- Simulação de Armazenamento dos Dados -->
+        <pre>
+        Dados Simulados:
+        Nome: [Nome aqui]
+        Email: [Email aqui]
+        Avaliação de Navegação: [Avaliação de 1 a 5]
+        Feedback: [Opções selecionadas]
+        Comentários: [Comentários adicionais]
+        </pre>
+
+    </main>
+
+</body>
+</html>

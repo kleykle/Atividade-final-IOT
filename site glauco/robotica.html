@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robótica e Campeonatos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        .header-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header-button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            margin-top: 80px; /* Espaço para a barra fixa */
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            background: #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        ul {
+            text-align: left;
+            font-size: 16px;
+            color: white;
+        }
+
+        .media-gallery {
+            margin-top: 20px;
+        }
+
+        .media-gallery img, .media-gallery video {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-button-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .header-button-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="casinha.png" alt="Home" class="home-icon" onclick="location.href='Pagina principal .html'">
+        </div>
+        <div class="navigation">
+            <button class="header-button" onclick="location.href='Hobbies e curiosidades.html'">Sobre mim</button>
+            <button class="header-button" onclick="location.href='Robotica.html'">Projetos de Robótica</button>
+            <button class="header-button" onclick="location.href='Programacao.html'">Programação</button>
+            <button class="header-button" onclick="location.href='Avaliação do Site.html'">Avalie o Site</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Robótica e Campeonatos</h1>
+        
+        <section>
+            <h3>Minha Jornada na Robótica</h3>
+            <p>Desde quando decidi fazer um grupo para um projeto anual envolvendo robótica, apaixonei-me pela área. Iniciei desenvolvendo esse projeto e fui me aprofundando na área, adquirindo mais conhecimento para participar de campeonatos com meus amigos.</p>
+        </section>
+
+        <section>
+            <h3>Campeonatos que Vencemos</h3>
+            <p>Participei de três campeonatos incríveis com minha equipe no Senac Nações, e todos foram experiências inesquecíveis:</p>
+            <ul>
+                <li><strong>1º Lugar no Campeonato de Robótica do Senac Nações 2023</strong> - Um desafio técnico onde construímos um robô segue linha que superou vários obstáculos em tempo recorde.</li>
+                <li><strong>1º Lugar no Campeonato de Robótica do Senac Nações 2024</strong> - Desenvolvemos um protótipo sustentável que passou por um labirinto em tempo recorde.</li>
+                <li><strong>3º Lugar no Campeonato de Robótica do Senac Nações 2024</strong> - Desenvolvemos um robô segue linha que superou vários obstáculos.</li>
+            </ul>
+        </section>
+
+        <section class="media-gallery">
+            <h3>Galeria de Imagens e Vídeos</h3>
+            <img src="Trofeu robotica 2023.jpg" alt="Campeonato de Robótica 2023">
+            <img src="Labirinto.jpg" alt="Campeonato de Robótica 2024">
+            
+            <video controls>
+                <source src="campeonato2024.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </section>
+
+        <button onclick="location.href='Pagina principal .html'">Voltar para página principal</button>
+    </main>
+</body>
+</html>
